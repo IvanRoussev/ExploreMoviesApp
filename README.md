@@ -19,7 +19,7 @@ You may also see any lint errors in the console.
 ### `npm run server`
 
 Runs the Server in the backend. \
-The Server runs on port 3001 on localhost.
+The Server runs on port 3001 on localhost. \
 Server IP Open [http://localhost:3000/movies](http://localhost:3000/movies) to view API in your browser.
 
 ## Optional
