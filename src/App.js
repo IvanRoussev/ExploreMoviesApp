@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     fetchMovies();
-    console.log(movies);
+    // console.log(movies);
   }, []);
 
   const searchBooks = async (title) => {
