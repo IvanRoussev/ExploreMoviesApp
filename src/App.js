@@ -19,10 +19,17 @@ function App() {
     console.log(movies);
   }, []);
 
+  const searchBooks = async (title) => {
+    const response = await axios.get(
+      `http://localhost:3001/movies?title=${title}`
+    );
+    setMovies(response.data);
+  };
+
   return (
     <div className='App'>
       <Header />
-      <MovieSearch />
+      <MovieSearch onSearch={searchBooks} />
       <MovieList movies={movies} />
     </div>
   );

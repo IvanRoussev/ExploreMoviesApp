@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function MovieSearch() {
+function MovieSearch({ onSearch }) {
   const [title, setTitle] = useState('');
 
   const handleChange = (event) => {
@@ -8,17 +8,23 @@ function MovieSearch() {
   };
 
   const handleSubmit = (event) => {
-    event.preveDefault();
+    event.preventDefault();
+    onSearch(title);
     // setTitle('');
   };
   return (
     <div className='movie-search'>
       <h3>Search For a Movie</h3>
       <form onSubmit={handleSubmit}>
-        <label>Title</label>
+        <label>Enter Title:</label>
         <input className='input' value={title} onChange={handleChange} />
-        <button className='button'>Search!</button>
+        <button class='button-43' role='button'>
+          Search!
+        </button>
       </form>
+      <p>
+        <a href='http://localhost:3000'>View All Movies</a>
+      </p>
     </div>
   );
 }
