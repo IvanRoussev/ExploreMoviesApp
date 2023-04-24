@@ -27,7 +27,8 @@ li {
 }
 
 h1,
-h2 {
+h2,
+p {
   color: #241909;
 }
 
@@ -135,6 +136,18 @@ ul {
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+
+.description {
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  background-color: #b8f2e6;
 }
 
 /* @media (min-width: 768px) {

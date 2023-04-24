@@ -21,6 +21,10 @@ function MovieShow({ movie, favorite }) {
       <h2>{movie.title}</h2>
       <h2>Released: {movie.year}</h2>
       <img src={movie.thumbnail} />
+      <div className='description'>
+        <h3>About</h3>
+        <p>{movie.extract}</p>
+      </div>
       <div className='cast'>
         <h3>CAST</h3>
         <ul className='cast-list'>{listcast}</ul>
