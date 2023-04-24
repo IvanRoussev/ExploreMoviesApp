@@ -1,9 +1,5 @@
 function FavoriteShow({ favorite }) {
-  return (
-    <div>
-      <p>{favorite.title}</p>
-    </div>
-  );
+  return <ul>{favorite.title}</ul>;
 }
 
 export default FavoriteShow;

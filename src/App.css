@@ -30,6 +30,22 @@ h1,
 h2 {
   color: #241909;
 }
+
+.headear {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.headear img {
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
 .movie-search {
   display: flex;
   flex-direction: column;
@@ -94,12 +110,24 @@ h2 {
   border-radius: 20px;
 }
 
-.cast-list {
+ul {
   margin-right: 40px;
 }
 
 .star {
   width: 50px;
+}
+
+.favorites-navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 20px;
+  background-color: #e9d985;
+  overflow: hidden;
+  position: sticky;
+  position: fixed;
 }
 
 @media (min-width: 768px) {
