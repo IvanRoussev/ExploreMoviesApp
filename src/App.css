@@ -150,6 +150,28 @@ ul {
   background-color: #b8f2e6;
 }
 
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.genre-button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+}
+
+.genre-button:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
 /* @media (min-width: 768px) {
   .button-43 {
     padding: 1rem 2rem;

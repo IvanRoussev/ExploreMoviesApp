@@ -10,7 +10,7 @@ function MovieSearch({ onSearch }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     onSearch(title);
-    // setTitle('');
+    setTitle('');
   };
   return (
     <div className='movie-search'>

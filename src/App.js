@@ -7,12 +7,13 @@ import MovieList from './components/MovieList';
 import MovieSearch from './components/MovieSearch';
 import FavouriteShow from './components/FavouriteList';
 import FavoriteList from './components/FavouriteList';
+import Genres from './components/Genre';
 
 function App() {
   const [movies, setMovies] = useState([]);
 
   const [favorite, setFavorite] = useState([]);
-  console.log(favorite);
+  // console.log(favorite);
 
   const fetchMovies = async () => {
     const response = await axios.get('http://localhost:3001/movies');
@@ -49,6 +50,8 @@ function App() {
       <Header />
       <MovieSearch onSearch={searchBooks} />
       <FavoriteList favorites={favorite} removeFavorite={removeFavorite} />
+      <Genres />
+
       <MovieList movies={movies} favorite={createFavorite} />
     </div>
   );
