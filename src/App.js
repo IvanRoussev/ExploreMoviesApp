@@ -36,11 +36,19 @@ function App() {
 
     setFavorite(updatedfavorites);
   };
+
+  const removeFavorite = (removedFavoriteIndex) => {
+    const removedFavorites = favorite.filter((fav) => {
+      return fav.id !== removedFavoriteIndex;
+    });
+    setFavorite(removedFavorites);
+  };
+
   return (
     <div className='App'>
       <Header />
       <MovieSearch onSearch={searchBooks} />
-      <FavoriteList favorites={favorite} />
+      <FavoriteList favorites={favorite} removeFavorite={removeFavorite} />
       <MovieList movies={movies} favorite={createFavorite} />
     </div>
   );

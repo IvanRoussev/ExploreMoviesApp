@@ -1,8 +1,14 @@
 import FavouriteShow from './FavoriteShow';
 
-function FavoriteList({ favorites }) {
+function FavoriteList({ favorites, removeFavorite }) {
   const listFavorites = favorites.map((favorite, index) => {
-    return <FavouriteShow key={index} favorite={favorite} />;
+    return (
+      <FavouriteShow
+        key={index}
+        favorite={favorite}
+        removeFavorite={removeFavorite}
+      />
+    );
   });
 
   return (
