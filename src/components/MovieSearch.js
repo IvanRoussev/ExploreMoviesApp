@@ -12,6 +12,7 @@ function MovieSearch({ onSearch }) {
     onSearch(title);
     setTitle('');
   };
+
   return (
     <div className='movie-search'>
       <h3>Search For a Movie</h3>
@@ -22,9 +23,6 @@ function MovieSearch({ onSearch }) {
           Search!
         </button>
       </form>
-      <p>
-        <a href='http://localhost:3000'>View All Movies</a>
-      </p>
     </div>
   );
 }

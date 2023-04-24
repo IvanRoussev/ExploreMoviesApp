@@ -57,7 +57,7 @@ function App() {
       <Header />
       <MovieSearch onSearch={searchBooks} />
       <FavoriteList favorites={favorite} removeFavorite={removeFavorite} />
-      <Genres onGenre={moviesByGenre} />
+      <Genres onGenre={moviesByGenre} onAll={fetchMovies} />
       <MovieList movies={movies} favorite={createFavorite} />
     </div>
   );

@@ -1,64 +1,73 @@
-function Genres({ onGenre }) {
-  const comedy = (event) => {
+function Genres({ onGenre, onAll }) {
+  const all = () => {
+    onAll();
+  };
+
+  const comedy = () => {
     onGenre('Comedy');
   };
-  const romance = (event) => {
+  const romance = () => {
     onGenre('Romance');
   };
-  const drama = (event) => {
+  const drama = () => {
     onGenre('Drama');
   };
-  const action = (event) => {
+  const action = () => {
     onGenre('Action');
   };
-  const documentary = (event) => {
+  const documentary = () => {
     onGenre('Documentary');
   };
-  const western = (event) => {
+  const western = () => {
     onGenre('Western');
   };
-  const spy = (event) => {
+  const spy = () => {
     onGenre('Spy');
   };
-  const crime = (event) => {
+  const crime = () => {
     onGenre('Crime');
   };
-  const horror = (event) => {
+  const horror = () => {
     onGenre('Horror');
   };
-  const family = (event) => {
+  const family = () => {
     onGenre('Family');
   };
-  const fantasy = (event) => {
+  const fantasy = () => {
     onGenre('Fantasy');
   };
-  const biography = (event) => {
+  const biography = () => {
     onGenre('Biography');
   };
-  const historical = (event) => {
+  const historical = () => {
     onGenre('Historical');
   };
-  const war = (event) => {
+  const war = () => {
     onGenre('War');
   };
-  const animated = (event) => {
+  const animated = () => {
     onGenre('Animated');
   };
-  const superhero = (event) => {
+  const superhero = () => {
     onGenre('Superhero');
   };
-  const political = (event) => {
+  const political = () => {
     onGenre('Political');
   };
-  const noir = (event) => {};
-  const independent = (event) => {
-    onGenre('Noir');
+  const noir = () => {
+    onGenre('noir');
+  };
+  const independent = () => {
+    onGenre('independent');
   };
 
   return (
     <>
       <h3>View By Genre</h3>
       <div className='genres'>
+        <button className='genre-button' onClick={all}>
+          All
+        </button>
         <button className='genre-button' onClick={comedy}>
           Comedy
         </button>
