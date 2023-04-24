@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-## Mandatory
+## Mandatory For Site to Function
 
 ### `npm start`
 
@@ -16,13 +16,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-## Mandatory
-
 ### `npm run server`
 
 Runs the Server in the backend.
 The Server runs on port 3001 on localhost.
 Server IP Open [http://localhost:3000/movies](http://localhost:3000/movies) to view API in your browser.
+
+## Optional
 
 ### `npm test`
 
