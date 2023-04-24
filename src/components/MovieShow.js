@@ -1,4 +1,4 @@
-import star from '../imgs/star.png';
+import star from '../images/star.png';
 
 function MovieShow({ movie, favorite }) {
   const favourite = () => {

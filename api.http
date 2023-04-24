@@ -1,3 +1,10 @@
-GET http://localhost:3001/movies?title=Sweetgrass HTTP/1.1
+# Run this if you want to Mock send http request to database
+GET http://localhost:3001/movies HTTP/1.1
 Content-Type: application/json
+
+###
+# Example for Genre Testing
+GET http://localhost:3001/movies?genres=Action HTTP/1.1
+Content-Type: application/json
+
 

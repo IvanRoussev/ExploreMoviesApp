@@ -5,7 +5,6 @@ import axios from 'axios';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
 import MovieSearch from './components/MovieSearch';
-import FavouriteShow from './components/FavouriteList';
 import FavoriteList from './components/FavouriteList';
 import Genres from './components/Genre';
 
@@ -45,13 +44,20 @@ function App() {
     setFavorite(removedFavorites);
   };
 
+  const moviesByGenre = async (genre) => {
+    const response = await axios.get(
+      `http://localhost:3001/movies?genres=${genre}`
+    );
+    console.log(response.data);
+    setMovies(response.data);
+  };
+
   return (
     <div className='App'>
       <Header />
       <MovieSearch onSearch={searchBooks} />
       <FavoriteList favorites={favorite} removeFavorite={removeFavorite} />
-      <Genres />
-
+      <Genres onGenre={moviesByGenre} />
       <MovieList movies={movies} favorite={createFavorite} />
     </div>
   );

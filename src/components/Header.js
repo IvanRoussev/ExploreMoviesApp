@@ -1,4 +1,4 @@
-import github from '../imgs/github-mark.png';
+import github from '../images/github-mark.png';
 
 function Header() {
   return (

@@ -1,4 +1,4 @@
-import trash from '../imgs/trash-icon.png';
+import trash from '../images/trash-icon.png';
 
 function FavoriteShow({ favorite, removeFavorite }) {
   const handleDeleteClick = () => {
