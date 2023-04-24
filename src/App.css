@@ -116,6 +116,7 @@ ul {
 
 .star {
   width: 50px;
+  cursor: pointer;
 }
 
 .favorites-navbar {
@@ -133,9 +134,10 @@ ul {
 .trash-icon {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .button-43 {
     padding: 1rem 2rem;
   }
@@ -158,4 +160,4 @@ ul {
   to {
     transform: rotate(360deg);
   }
-}
+} */
