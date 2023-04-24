@@ -5,9 +5,14 @@ import axios from 'axios';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
 import MovieSearch from './components/MovieSearch';
+import FavouriteShow from './components/FavouriteList';
+import FavoriteList from './components/FavouriteList';
 
 function App() {
   const [movies, setMovies] = useState([]);
+
+  const [favorite, setFavorite] = useState([]);
+  console.log(favorite);
 
   const fetchMovies = async () => {
     const response = await axios.get('http://localhost:3001/movies');
@@ -26,11 +31,17 @@ function App() {
     setMovies(response.data);
   };
 
+  const createFavorite = (favoriteMovie) => {
+    const updatedfavorites = [...favorite, favoriteMovie];
+
+    setFavorite(updatedfavorites);
+  };
   return (
     <div className='App'>
       <Header />
       <MovieSearch onSearch={searchBooks} />
-      <MovieList movies={movies} />
+      <FavoriteList favorites={favorite} />
+      <MovieList movies={movies} favorite={createFavorite} />
     </div>
   );
 }

@@ -1,4 +1,10 @@
-function MovieShow({ movie }) {
+import star from '../imgs/star.png';
+
+function MovieShow({ movie, favorite }) {
+  const favourite = () => {
+    favorite(movie);
+  };
+
   const listcast = movie.cast.map((person, index) => {
     return (
       <li key={index}>
@@ -11,6 +17,7 @@ function MovieShow({ movie }) {
 
   return (
     <div className='each-movie'>
+      <img className='star' src={star} alt='image' onClick={favourite} />
       <h2>{movie.title}</h2>
       <h2>Released: {movie.year}</h2>
       <img src={movie.thumbnail} />
