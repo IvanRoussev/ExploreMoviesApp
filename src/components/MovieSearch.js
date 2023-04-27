@@ -17,7 +17,6 @@ function MovieSearch({ onSearch }) {
     <div className='movie-search'>
       <h3>Search For a Movie</h3>
       <form onSubmit={handleSubmit}>
-        <label>Enter Title:</label>
         <input className='input' value={title} onChange={handleChange} />
         <button className='button-43' role='button'>
           Search!

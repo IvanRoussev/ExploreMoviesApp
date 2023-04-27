@@ -11,6 +11,12 @@ a:visited {
   color: #645853;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
 ul,
 li {
   text-decoration: none;
@@ -113,6 +119,7 @@ p {
   margin-left: 450px;
   margin-right: 450px;
   border-radius: 20px;
+  width: 700px;
 }
 
 ul {
@@ -132,6 +139,8 @@ ul {
   border-radius: 20px;
   background-color: #e9d985;
   position: fixed;
+  width: 300px;
+  top: 100px;
 }
 
 .trash-icon {
@@ -152,12 +161,12 @@ ul {
   background-color: #b8f2e6;
 }
 
-.genres {
+.genres-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 250px;
-  margin-right: 250px;
+  margin-left: 400px;
+  margin-right: 400px;
 }
 
 .genre-button {
@@ -175,7 +184,7 @@ ul {
 }
 @media only screen and (max-width: 600px) {
   .description {
-    width: 80%;
+    width: 60%;
     margin: 10px auto;
   }
 
@@ -187,12 +196,15 @@ ul {
   }
 
   .each-movie {
+    padding-top: 10px;
     margin-top: 100px;
     margin-bottom: 100px;
     background-color: #c2f970;
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 20px;
+    width: 400px;
+    height: auto;
   }
 
   ul {
@@ -209,15 +221,14 @@ ul {
   }
 
   .favorites-navbar {
-    position: relative;
+    position: static;
     width: 70%;
     margin: 10px auto;
-
     border-radius: 20px;
     background-color: #e9d985;
     overflow-y: auto;
   }
-  .genres {
+  .genres-buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

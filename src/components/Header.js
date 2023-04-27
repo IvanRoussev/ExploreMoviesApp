@@ -4,8 +4,12 @@ function Header() {
   return (
     <div className='headear'>
       <h1>Movies</h1>
-      <a href='https://github.com/IvanRoussev/ExploreMovies' target='_blank'>
-        <img src={github} />
+      <a
+        href='https://github.com/IvanRoussev/ExploreMoviesApp'
+        target='_blank'
+        rel='noreferrer'
+      >
+        <img src={github} alt='github' />
       </a>
     </div>
   );

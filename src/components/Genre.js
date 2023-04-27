@@ -64,7 +64,7 @@ function Genres({ onGenre, onAll }) {
   return (
     <>
       <h3>View By Genre</h3>
-      <div className='genres'>
+      <div className='genres-buttons'>
         <button className='genre-button' onClick={all}>
           All
         </button>
