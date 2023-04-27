@@ -32,9 +32,12 @@ function App() {
   };
 
   const createFavorite = (favoriteMovie) => {
-    const updatedfavorites = [...favorite, favoriteMovie];
-
-    setFavorite(updatedfavorites);
+    if (favorite.includes(favoriteMovie) === false) {
+      const updatedfavorites = [...favorite, favoriteMovie];
+      setFavorite(updatedfavorites);
+    } else {
+      alert(`Movie ${favoriteMovie.title} already in favourites`);
+    }
   };
 
   const removeFavorite = (removedFavoriteIndex) => {
