@@ -5,6 +5,10 @@ function MovieShow({ movie, favorite }) {
     favorite(movie);
   };
 
+  const getGenres = movie.genres.map((genre, index) => {
+    return <li key={index}>{genre}</li>;
+  });
+
   const listcast = movie.cast.map((person, index) => {
     return (
       <li key={index}>
@@ -21,6 +25,10 @@ function MovieShow({ movie, favorite }) {
       <h2>{movie.title}</h2>
       <h2>Released: {movie.year}</h2>
       <img src={movie.thumbnail} />
+      <h3>Genres</h3>
+      <div className='genres'>
+        <ul className='genre-list'>{getGenres}</ul>
+      </div>
       <div className='description'>
         <h3>About</h3>
         <p>{movie.extract}</p>

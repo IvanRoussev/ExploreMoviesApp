@@ -12,12 +12,10 @@ function FavoriteList({ favorites, removeFavorite }) {
   });
 
   return (
-    <>
-      <div className='favorites-navbar'>
-        <h2>Your Favorites</h2>
-        {listFavorites}
-      </div>
-    </>
+    <div className='favorites-navbar'>
+      <h2>Your Favorites</h2>
+      {listFavorites}
+    </div>
   );
 }
 

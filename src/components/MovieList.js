@@ -8,7 +8,7 @@ function MovieList({ movies, favorite }) {
     return <MovieShow key={movie.id} movie={movie} favorite={favorite} />;
   });
 
-  return <div>{listMovies}</div>;
+  return <div className='all-movies'>{listMovies}</div>;
 }
 
 export default MovieList;
